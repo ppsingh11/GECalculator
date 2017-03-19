@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar4"
+        app:titleTextColor="#ffffff"
+
+        app:title="Summary" />
+
+    <TextView
+        android:text="Total Spent"
+        android:paddingTop="5dp"
+        android:textSize="18sp"
+        android:background="#e9a1ec"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:id="@+id/t_spent" />
+
+    <TextView
+        android:text="IndiVidual Spent"
+        android:layout_width="match_parent"
+        android:background="#e9a1ec"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+
+        android:textSize="18sp"
+        android:id="@+id/i_spent" />
+
+
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </ListView>
+
+
+
+
+
+
+</LinearLayout>

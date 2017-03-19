@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar4"
+        app:titleTextColor="#ffffff"
+
+        app:title="About Us" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/pps"
+            android:id="@+id/pps" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="#3b8fc7"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_height="match_parent"
+            android:text="Prashant Pratap Singh" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/omi"
+            android:id="@+id/omi" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="#3b8fc7"
+            android:textSize="30sp"
+            android:layout_height="match_parent"
+            android:text="Omprakash Kumar"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="National Institute Of Technology Patna CSE Department"
+        android:textSize="20sp"
+        android:background="#deded8"
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:id="@+id/textView3"
+        tools:textStyle="bold" />
+
+
+</LinearLayout>

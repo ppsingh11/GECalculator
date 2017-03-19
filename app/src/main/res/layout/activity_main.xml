@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#edd391"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.prashantpratap.gecalculator.MainActivity">
+
+    <Button
+        android:text="ADD TRIP"
+        android:onClick="AddNewTrip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginTop="29dp"
+        android:id="@+id/addtrip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:inputType="textPersonName"
+        android:hint="Trip Name"
+        android:ems="10"
+        android:visibility="invisible"
+        android:layout_marginTop="96dp"
+        android:id="@+id/tripname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:visibility="invisible"
+        android:inputType="number"
+        android:hint="Group Size"
+        android:ems="10"
+
+        android:layout_marginTop="45dp"
+        android:id="@+id/groupsize"
+        android:layout_below="@+id/tripname"
+        android:layout_alignLeft="@+id/tripname"
+        android:layout_alignStart="@+id/tripname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="ADD"
+        android:onClick="AddDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:visibility="invisible"
+        android:layout_marginTop="47dp"
+        android:id="@+id/add_details"
+        android:layout_below="@+id/groupsize"
+        android:layout_alignLeft="@+id/groupsize"
+        android:layout_alignStart="@+id/groupsize"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</LinearLayout>

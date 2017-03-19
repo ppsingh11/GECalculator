@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#bae7ed7e"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar4"
+        app:titleTextColor="#ffffff"
+
+        app:title="GE Calculator" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:clickable="false"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+
+        android:id="@+id/t" />
+
+    <Button
+        android:text="ADD MONEY"
+        android:onClick="Add_Money"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+
+        android:background="#27bfad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/addmoney"
+        android:layout_weight="0.04" />
+
+    <Button
+        android:text="CALCULATE"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+
+        android:background="#27bfad"
+        android:onClick="Calculate"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="20dp"
+        android:layout_weight="0.15"
+        android:id="@+id/calculate" />
+
+    <Button
+        android:text="END TRIP"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:background="#27bfad"
+        android:onClick="End_trip"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:id="@+id/endtrip" />
+
+    <Button
+        android:text="ABOUT US"
+        android:onClick="About_us"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:background="#27bfad"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+
+        android:id="@+id/aboutus" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:clickable="false"
+        android:id="@+id/textView" />
+</LinearLayout>
